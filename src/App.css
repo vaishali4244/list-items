@@ -14,7 +14,7 @@ body {
   margin: 0;
   padding: 1.5rem 2rem;
   background: var(--bg);
-  height: 100vh;
+  height:100vh;
   width: 94vw;
 }
 
@@ -81,12 +81,17 @@ button {
   color: var(--bg);
 }
 
+ol{
+  height: auto;
+}
+
 li {
   background: #533977;
   width: 82vw;
   margin: 0.5rem 1rem;
   color: #d9c3c9;
   padding: 0rem 0.8rem;
+  overflow-x: scroll;
 }
 
 li h4 {

@@ -13,7 +13,7 @@ const Screen = () => {
         setDescriptions([...descriptions, description])
     };
 
-//function to add new items and clear the input fields
+    //function to add new items and clear the input fields
     const handleAddItem = () => {
         if (addTitle.trim() !== "" && addDescription.trim() !== "") {
             addItemFunc(addTitle, addDescription);
@@ -32,22 +32,22 @@ const Screen = () => {
                         type="text"
                         placeholder="add title"
                         onChange={(e) => setAddTitle(e?.target?.value)}
-                        value={addTitle} 
-                        />
+                        value={addTitle}
+                    />
                 </div>
                 <div className="desc-content">
                     <h4>Description</h4>
-                    <textarea placeholder="add description" 
+                    <textarea placeholder="add description"
                         onChange={(e) => setAddDescription(e?.target?.value)}
                         value={addDescription}
-                        rows="4" 
+                        rows="4"
                         cols="50"
                     />
                 </div>
                 <button onClick={handleAddItem}>Submit</button>
             </div>
             <ol>
-                {titles?.map((item, i) =>(
+                {titles?.map((item, i) => (
                     <li key={i} >
                         <h4>Title : {item}</h4>
                         <p>Description : {descriptions[i]}</p>
